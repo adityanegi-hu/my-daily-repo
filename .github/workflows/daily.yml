@@ -1,7 +1,7 @@
 name: Daily Auto Commit
 on:
   schedule:
-    - cron: '30 21 * * *'   # 8:00 PM IST daily
+    - cron: '30 21 * * *' # 3:00 AM IST daily
   workflow_dispatch:
 permissions:
   contents: write
