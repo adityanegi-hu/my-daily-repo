@@ -1,8 +1,10 @@
 name: Daily Auto Commit
+
 on:
   schedule:
-    - cron: '30 21 * * *' # 3:00 AM IST daily
+    - cron: '30 21 * * *' # 21:30 UTC = 3:00 AM IST daily
   workflow_dispatch:
+
 permissions:
   contents: write
 
@@ -15,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
         with:
           ref: main
           token: ${{ secrets.GITHUB_TOKEN }}
