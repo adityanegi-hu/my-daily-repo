@@ -22,7 +22,7 @@ jobs:
       - name: Commit and push
         run: |
           git config user.name "adityanegi-hu"
-          git config user.email "YOUR_ID+adityanegi-hu@users.noreply.github.com"
+          git config user.email "117473245+adityanegi-hu@users.noreply.github.com"
           git add log.txt
           if git diff --staged --quiet; then
             echo "No changes to commit, skipping push"
